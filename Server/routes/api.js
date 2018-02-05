@@ -26,10 +26,7 @@ module.exports = function(app) {
         return next(err);
       }
       console.log(data);
-      res.render('pages/edit', {
-        value: data
-      });
-      // res.json(data);
+      res.json(data);
 
     });
   });
@@ -59,7 +56,7 @@ module.exports = function(app) {
 
   });
 
-  //Update book
+  //Update a project
   app.put('/api/:id', function(req, res, next) {
     console.log("edit id");
     Project.findById(req.params.id, function(err, data) {
@@ -73,4 +70,22 @@ module.exports = function(app) {
       });
     });
   });
+
+  //add tasks
+  app.put('/api/:id/tasks', function(req, res, next) {
+    console.log("add task id");
+    Project.findById(req.params.id, function(err, data) {
+      var new_task = {
+        item: req.body.item
+      };
+      data.tasks.push(new_task);
+      data.save(function(err, data) {
+        if (err) {
+          return next(err);
+        }
+        res.json(data);
+      });
+    });
+  });
+
 };
