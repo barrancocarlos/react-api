@@ -4,7 +4,7 @@ var config = require('./config');
 // avoid mongoose library warning
 mongoose.Promise = global.Promise;
 
-mongoose.connect(config.dbhost, {useMongoClient: true,});
+mongoose.connect(config.dbhost, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
