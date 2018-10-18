@@ -53,6 +53,7 @@ class Home extends Component {
 </div>
 <div className="container">
 	<div className="row">
+        <Link to={`/create`} className="btn btn-outline-info">Add New</Link>
 		<table className="table table-borderless">
 			<thead>
 				<tr>					
