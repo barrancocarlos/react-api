@@ -1,17 +1,13 @@
-# Appointment App
+# React Api
 
 ![Alt Text](https://github.com/barrancocarlos/movies-tracker/blob/master/public/images/node.jpg)
 
-Appointment Scheduler App in Express.js and React with Materials UI
+Simple Express/React CRUD App
 
 
 _Screen capture_
 
-![Alt Text](https://github.com/barrancocarlos/appointment-app/blob/master/express-api/public/images/screen1.png)
-
-_Date Picker_
-
-![Alt Text](https://github.com/barrancocarlos/appointment-app/blob/master/express-api/public/images/screen2.png)
+![Alt Text](https://github.com/barrancocarlos/react-api/blob/master/Server/public/images/screen1.png)
 
 
 ## Getting Started
@@ -30,24 +26,24 @@ Make sure you have installed all of the following prerequisites on your developm
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/barrancocarlos/appointment-app.git
+$ git clone https://github.com/barrancocarlos/react-api.git
 
 # Go into the repository
-$ cd movies-tracker
+$ cd react-api
 
 # Go into express app
-$ cd express-api
+$ cd server
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ node app.js
+$ npm start
 
 # App will run on http://localhost:5000
 
 # Go into react app
-$ cd react-app
+$ cd client
 
 # Install dependencies
 $ npm install
