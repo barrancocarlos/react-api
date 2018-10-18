@@ -20,7 +20,7 @@ Make sure you have installed all of the following prerequisites on your developm
 
 * Git - [Download & Install. Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this GitHub Gist to install Node.js.
-* MongoDB - [Download & Install MongoDB](https://docs.mongodb.com/manual/installation/), and make sure it's running on the default port (27017). Create a Database named like the one in the project and [import the data](https://docs.mongodb.com/v2.6/core/import-export/) from the database_export folder using [mongorestore](https://docs.mongodb.com/v2.6/reference/program/mongorestore/#bin.mongorestore).
+* MongoDB - [Download & Install MongoDB](https://docs.mongodb.com/manual/installation/), and make sure it's running on the default port (27017).
 
 ### Installing
 
